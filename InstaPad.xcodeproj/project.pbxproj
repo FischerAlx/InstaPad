@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0C932F2B23E5CC0068D215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C932E2B23E5CC0068D215 /* AppDelegate.swift */; };
+		AA0C93312B23E5CC0068D215 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93302B23E5CC0068D215 /* SceneDelegate.swift */; };
+		AA0C93332B23E5CC0068D215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93322B23E5CC0068D215 /* ViewController.swift */; };
+		AA0C93362B23E5CC0068D215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C93342B23E5CC0068D215 /* Main.storyboard */; };
+		AA0C93392B23E5CC0068D215 /* InstaPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93372B23E5CC0068D215 /* InstaPad.xcdatamodeld */; };
+		AA0C933B2B23E5CE0068D215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0C933A2B23E5CE0068D215 /* Assets.xcassets */; };
+		AA0C933E2B23E5CE0068D215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */; };
+		AA0C93492B23E5CE0068D215 /* InstaPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93482B23E5CE0068D215 /* InstaPadTests.swift */; };
+		AA0C93532B23E5CE0068D215 /* InstaPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93522B23E5CE0068D215 /* InstaPadUITests.swift */; };
+		AA0C93552B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93542B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA0C93452B23E5CE0068D215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0C93232B23E5CC0068D215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0C932A2B23E5CC0068D215;
+			remoteInfo = InstaPad;
+		};
+		AA0C934F2B23E5CE0068D215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0C93232B23E5CC0068D215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0C932A2B23E5CC0068D215;
+			remoteInfo = InstaPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA0C932B2B23E5CC0068D215 /* InstaPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0C932E2B23E5CC0068D215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0C93302B23E5CC0068D215 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA0C93322B23E5CC0068D215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA0C93352B23E5CC0068D215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA0C93382B23E5CC0068D215 /* InstaPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaPad.xcdatamodel; sourceTree = "<group>"; };
+		AA0C933A2B23E5CE0068D215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0C933D2B23E5CE0068D215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA0C933F2B23E5CE0068D215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0C93442B23E5CE0068D215 /* InstaPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0C93482B23E5CE0068D215 /* InstaPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPadTests.swift; sourceTree = "<group>"; };
+		AA0C934E2B23E5CE0068D215 /* InstaPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0C93522B23E5CE0068D215 /* InstaPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPadUITests.swift; sourceTree = "<group>"; };
+		AA0C93542B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0C93282B23E5CC0068D215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C93412B23E5CE0068D215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C934B2B23E5CE0068D215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0C93222B23E5CC0068D215 = {
+			isa = PBXGroup;
+			children = (
+				AA0C932D2B23E5CC0068D215 /* InstaPad */,
+				AA0C93472B23E5CE0068D215 /* InstaPadTests */,
+				AA0C93512B23E5CE0068D215 /* InstaPadUITests */,
+				AA0C932C2B23E5CC0068D215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0C932C2B23E5CC0068D215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C932B2B23E5CC0068D215 /* InstaPad.app */,
+				AA0C93442B23E5CE0068D215 /* InstaPadTests.xctest */,
+				AA0C934E2B23E5CE0068D215 /* InstaPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0C932D2B23E5CC0068D215 /* InstaPad */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C932E2B23E5CC0068D215 /* AppDelegate.swift */,
+				AA0C93302B23E5CC0068D215 /* SceneDelegate.swift */,
+				AA0C93322B23E5CC0068D215 /* ViewController.swift */,
+				AA0C93342B23E5CC0068D215 /* Main.storyboard */,
+				AA0C933A2B23E5CE0068D215 /* Assets.xcassets */,
+				AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */,
+				AA0C933F2B23E5CE0068D215 /* Info.plist */,
+				AA0C93372B23E5CC0068D215 /* InstaPad.xcdatamodeld */,
+			);
+			path = InstaPad;
+			sourceTree = "<group>";
+		};
+		AA0C93472B23E5CE0068D215 /* InstaPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C93482B23E5CE0068D215 /* InstaPadTests.swift */,
+			);
+			path = InstaPadTests;
+			sourceTree = "<group>";
+		};
+		AA0C93512B23E5CE0068D215 /* InstaPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C93522B23E5CE0068D215 /* InstaPadUITests.swift */,
+				AA0C93542B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift */,
+			);
+			path = InstaPadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0C932A2B23E5CC0068D215 /* InstaPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0C93582B23E5CE0068D215 /* Build configuration list for PBXNativeTarget "InstaPad" */;
+			buildPhases = (
+				AA0C93272B23E5CC0068D215 /* Sources */,
+				AA0C93282B23E5CC0068D215 /* Frameworks */,
+				AA0C93292B23E5CC0068D215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaPad;
+			productName = InstaPad;
+			productReference = AA0C932B2B23E5CC0068D215 /* InstaPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA0C93432B23E5CE0068D215 /* InstaPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0C935B2B23E5CE0068D215 /* Build configuration list for PBXNativeTarget "InstaPadTests" */;
+			buildPhases = (
+				AA0C93402B23E5CE0068D215 /* Sources */,
+				AA0C93412B23E5CE0068D215 /* Frameworks */,
+				AA0C93422B23E5CE0068D215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0C93462B23E5CE0068D215 /* PBXTargetDependency */,
+			);
+			name = InstaPadTests;
+			productName = InstaPadTests;
+			productReference = AA0C93442B23E5CE0068D215 /* InstaPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA0C934D2B23E5CE0068D215 /* InstaPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0C935E2B23E5CE0068D215 /* Build configuration list for PBXNativeTarget "InstaPadUITests" */;
+			buildPhases = (
+				AA0C934A2B23E5CE0068D215 /* Sources */,
+				AA0C934B2B23E5CE0068D215 /* Frameworks */,
+				AA0C934C2B23E5CE0068D215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0C93502B23E5CE0068D215 /* PBXTargetDependency */,
+			);
+			name = InstaPadUITests;
+			productName = InstaPadUITests;
+			productReference = AA0C934E2B23E5CE0068D215 /* InstaPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0C93232B23E5CC0068D215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0C932A2B23E5CC0068D215 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AA0C93432B23E5CE0068D215 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AA0C932A2B23E5CC0068D215;
+					};
+					AA0C934D2B23E5CE0068D215 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AA0C932A2B23E5CC0068D215;
+					};
+				};
+			};
+			buildConfigurationList = AA0C93262B23E5CC0068D215 /* Build configuration list for PBXProject "InstaPad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0C93222B23E5CC0068D215;
+			productRefGroup = AA0C932C2B23E5CC0068D215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0C932A2B23E5CC0068D215 /* InstaPad */,
+				AA0C93432B23E5CE0068D215 /* InstaPadTests */,
+				AA0C934D2B23E5CE0068D215 /* InstaPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0C93292B23E5CC0068D215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0C933E2B23E5CE0068D215 /* LaunchScreen.storyboard in Resources */,
+				AA0C933B2B23E5CE0068D215 /* Assets.xcassets in Resources */,
+				AA0C93362B23E5CC0068D215 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C93422B23E5CE0068D215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C934C2B23E5CE0068D215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0C93272B23E5CC0068D215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0C93332B23E5CC0068D215 /* ViewController.swift in Sources */,
+				AA0C93392B23E5CC0068D215 /* InstaPad.xcdatamodeld in Sources */,
+				AA0C932F2B23E5CC0068D215 /* AppDelegate.swift in Sources */,
+				AA0C93312B23E5CC0068D215 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C93402B23E5CE0068D215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0C93492B23E5CE0068D215 /* InstaPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0C934A2B23E5CE0068D215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0C93552B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift in Sources */,
+				AA0C93532B23E5CE0068D215 /* InstaPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA0C93462B23E5CE0068D215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0C932A2B23E5CC0068D215 /* InstaPad */;
+			targetProxy = AA0C93452B23E5CE0068D215 /* PBXContainerItemProxy */;
+		};
+		AA0C93502B23E5CE0068D215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0C932A2B23E5CC0068D215 /* InstaPad */;
+			targetProxy = AA0C934F2B23E5CE0068D215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA0C93342B23E5CC0068D215 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA0C93352B23E5CC0068D215 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA0C933D2B23E5CE0068D215 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA0C93562B23E5CE0068D215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0C93572B23E5CE0068D215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0C93592B23E5CE0068D215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DG6943V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaPad/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fisheralx.InstaPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0C935A2B23E5CE0068D215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DG6943V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InstaPad/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fisheralx.InstaPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA0C935C2B23E5CE0068D215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DG6943V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fisheralx.InstaPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InstaPad";
+			};
+			name = Debug;
+		};
+		AA0C935D2B23E5CE0068D215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DG6943V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fisheralx.InstaPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstaPad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InstaPad";
+			};
+			name = Release;
+		};
+		AA0C935F2B23E5CE0068D215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DG6943V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fisheralx.InstaPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaPad;
+			};
+			name = Debug;
+		};
+		AA0C93602B23E5CE0068D215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6DG6943V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fisheralx.InstaPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InstaPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0C93262B23E5CC0068D215 /* Build configuration list for PBXProject "InstaPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0C93562B23E5CE0068D215 /* Debug */,
+				AA0C93572B23E5CE0068D215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0C93582B23E5CE0068D215 /* Build configuration list for PBXNativeTarget "InstaPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0C93592B23E5CE0068D215 /* Debug */,
+				AA0C935A2B23E5CE0068D215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0C935B2B23E5CE0068D215 /* Build configuration list for PBXNativeTarget "InstaPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0C935C2B23E5CE0068D215 /* Debug */,
+				AA0C935D2B23E5CE0068D215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0C935E2B23E5CE0068D215 /* Build configuration list for PBXNativeTarget "InstaPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0C935F2B23E5CE0068D215 /* Debug */,
+				AA0C93602B23E5CE0068D215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA0C93372B23E5CC0068D215 /* InstaPad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA0C93382B23E5CC0068D215 /* InstaPad.xcdatamodel */,
+			);
+			currentVersion = AA0C93382B23E5CC0068D215 /* InstaPad.xcdatamodel */;
+			path = InstaPad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA0C93232B23E5CC0068D215 /* Project object */;
+}
