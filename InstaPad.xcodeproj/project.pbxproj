@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		AA0C932F2B23E5CC0068D215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C932E2B23E5CC0068D215 /* AppDelegate.swift */; };
 		AA0C93312B23E5CC0068D215 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93302B23E5CC0068D215 /* SceneDelegate.swift */; };
-		AA0C93332B23E5CC0068D215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93322B23E5CC0068D215 /* ViewController.swift */; };
-		AA0C93362B23E5CC0068D215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C93342B23E5CC0068D215 /* Main.storyboard */; };
+		AA0C93332B23E5CC0068D215 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93322B23E5CC0068D215 /* MainPageViewController.swift */; };
 		AA0C93392B23E5CC0068D215 /* InstaPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93372B23E5CC0068D215 /* InstaPad.xcdatamodeld */; };
 		AA0C933B2B23E5CE0068D215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0C933A2B23E5CE0068D215 /* Assets.xcassets */; };
 		AA0C933E2B23E5CE0068D215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */; };
 		AA0C93492B23E5CE0068D215 /* InstaPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93482B23E5CE0068D215 /* InstaPadTests.swift */; };
 		AA0C93532B23E5CE0068D215 /* InstaPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93522B23E5CE0068D215 /* InstaPadUITests.swift */; };
 		AA0C93552B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93542B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift */; };
+		AA0C93642B23EAAF0068D215 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93632B23EAAF0068D215 /* UserPageViewController.swift */; };
+		AA0C93652B23EAAF0068D215 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93632B23EAAF0068D215 /* UserPageViewController.swift */; };
+		AA0C93662B23EAAF0068D215 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C93632B23EAAF0068D215 /* UserPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,7 @@
 		AA0C932B2B23E5CC0068D215 /* InstaPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C932E2B23E5CC0068D215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0C93302B23E5CC0068D215 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA0C93322B23E5CC0068D215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA0C93352B23E5CC0068D215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA0C93322B23E5CC0068D215 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainPageViewController.swift; path = InstaPad/Controllers/MainPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		AA0C93382B23E5CC0068D215 /* InstaPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaPad.xcdatamodel; sourceTree = "<group>"; };
 		AA0C933A2B23E5CE0068D215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0C933D2B23E5CE0068D215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		AA0C934E2B23E5CE0068D215 /* InstaPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0C93522B23E5CE0068D215 /* InstaPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPadUITests.swift; sourceTree = "<group>"; };
 		AA0C93542B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA0C93632B23EAAF0068D215 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPageViewController.swift; path = InstaPad/Controllers/UserPageViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +105,9 @@
 			children = (
 				AA0C932E2B23E5CC0068D215 /* AppDelegate.swift */,
 				AA0C93302B23E5CC0068D215 /* SceneDelegate.swift */,
-				AA0C93322B23E5CC0068D215 /* ViewController.swift */,
-				AA0C93342B23E5CC0068D215 /* Main.storyboard */,
+				AA0C93612B23EA3C0068D215 /* Controllers */,
+				AA0C93622B23EA5E0068D215 /* Views */,
 				AA0C933A2B23E5CE0068D215 /* Assets.xcassets */,
-				AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */,
 				AA0C933F2B23E5CE0068D215 /* Info.plist */,
 				AA0C93372B23E5CC0068D215 /* InstaPad.xcdatamodeld */,
 			);
@@ -129,6 +130,25 @@
 			);
 			path = InstaPadUITests;
 			sourceTree = "<group>";
+		};
+		AA0C93612B23EA3C0068D215 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C93322B23E5CC0068D215 /* MainPageViewController.swift */,
+				AA0C93632B23EAAF0068D215 /* UserPageViewController.swift */,
+			);
+			name = Controllers;
+			path = InstaPad/Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA0C93622B23EA5E0068D215 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			path = InstaPad/Views;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -236,7 +256,6 @@
 			files = (
 				AA0C933E2B23E5CE0068D215 /* LaunchScreen.storyboard in Resources */,
 				AA0C933B2B23E5CE0068D215 /* Assets.xcassets in Resources */,
-				AA0C93362B23E5CC0068D215 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0C93332B23E5CC0068D215 /* ViewController.swift in Sources */,
+				AA0C93332B23E5CC0068D215 /* MainPageViewController.swift in Sources */,
 				AA0C93392B23E5CC0068D215 /* InstaPad.xcdatamodeld in Sources */,
+				AA0C93642B23EAAF0068D215 /* UserPageViewController.swift in Sources */,
 				AA0C932F2B23E5CC0068D215 /* AppDelegate.swift in Sources */,
 				AA0C93312B23E5CC0068D215 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0C93652B23EAAF0068D215 /* UserPageViewController.swift in Sources */,
 				AA0C93492B23E5CE0068D215 /* InstaPadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0C93662B23EAAF0068D215 /* UserPageViewController.swift in Sources */,
 				AA0C93552B23E5CE0068D215 /* InstaPadUITestsLaunchTests.swift in Sources */,
 				AA0C93532B23E5CE0068D215 /* InstaPadUITests.swift in Sources */,
 			);
@@ -301,14 +323,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA0C93342B23E5CC0068D215 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA0C93352B23E5CC0068D215 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA0C933C2B23E5CE0068D215 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,7 +465,6 @@
 				INFOPLIST_FILE = InstaPad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,7 +492,6 @@
 				INFOPLIST_FILE = InstaPad/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
