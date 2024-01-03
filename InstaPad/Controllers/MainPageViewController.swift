@@ -16,8 +16,10 @@ class MainPageViewController: UIViewController {
         table.translatesAutoresizingMaskIntoConstraints = false
         table.dataSource = self
         table.delegate = self
-        //table.register(UINib(nibName: "", bundle: nil), forCellReuseIdentifier: "MainLentaId")
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "MainLentaId")
+        table.separatorStyle = .none
+        //tableRegister123(tableView, for PostMainViewCell)
+        table.register(PostMainViewCell.self, forCellReuseIdentifier: PostMainViewCell.reuseIdentifier)
+        //table.register(UITableViewCell.self, forCellReuseIdentifier: "MainLentaId")
         return table
     }()
     
@@ -46,22 +48,22 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainLentaId", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: PostMainViewCell.reuseIdentifier, for: indexPath)
 
-        let model = dataSource[indexPath.row]
-        var listConfiguration = cell.defaultContentConfiguration()
-        var backgroundConfiguration = cell.defaultBackgroundConfiguration()
-        
-        listConfiguration.text = model
-        listConfiguration.secondaryText = "New message"
-        listConfiguration.secondaryTextProperties.font = UIFont.systemFont(ofSize: 21)
-        
-        backgroundConfiguration.backgroundColor = .darkGray
-        backgroundConfiguration.cornerRadius = 10
-        backgroundConfiguration.backgroundInsets = .init(top: 5, leading: 5, bottom: 5, trailing: 5)
-        
-        cell.contentConfiguration = listConfiguration
-        cell.backgroundConfiguration = backgroundConfiguration
+//        let model = dataSource[indexPath.row]
+//        var listConfiguration = cell.defaultContentConfiguration()
+//        var backgroundConfiguration = cell.defaultBackgroundConfiguration()
+//        
+//        listConfiguration.text = model
+//        listConfiguration.secondaryText = "New message"
+//        listConfiguration.secondaryTextProperties.font = UIFont.systemFont(ofSize: 21)
+//                
+//        backgroundConfiguration.backgroundColor = .darkGray
+//        backgroundConfiguration.cornerRadius = 10
+//        backgroundConfiguration.backgroundInsets = .init(top: 5, leading: 5, bottom: 5, trailing: 5)
+//        
+//        cell.contentConfiguration = listConfiguration
+//        cell.backgroundConfiguration = backgroundConfiguration
         
         return cell
     }
