@@ -17,18 +17,21 @@ class PostMainViewCell: UITableViewCell {
     
     private lazy var nicknameLabel: UILabel = {
         let label = UILabel()
+        //label.backgroundColor = .red
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var underLabel: UILabel = {
         let label = UILabel()
+        //label.backgroundColor = .yellow
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var timePostLabel: UILabel = {
         let label = UILabel()
+        //label.backgroundColor = .green
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -47,28 +50,47 @@ class PostMainViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configureCell(with user: UserData) {
+        
+        avatarImageView.image = user.avatarImage
+        nicknameLabel.text = user.nickname
+        nicknameLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        underLabel.text = "id:" + String(user.iD)
+        underLabel.textColor = UIColor(named: "secondaryColor")
+        underLabel.font = UIFont.italicSystemFont(ofSize: 21)
+        timePostLabel.text = "° " + String(user.lastTimeOnline) + " min."
+        timePostLabel.font = UIFont.boldSystemFont(ofSize: 21)
+        
+    }
+    
     private func setupLayot() {
         
         guard avatarImageView.superview == nil else {return}
         
-        var mainStackView = UIStackView(arrangedSubviews: [nicknameLabel, underLabel,])
+        let mainStackView = UIStackView(arrangedSubviews: [nicknameLabel, underLabel,])
+        mainStackView.spacing = 2
+        mainStackView.axis = .vertical
+        mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         contentView.addSubview(avatarImageView)
         contentView.addSubview(mainStackView)
         contentView.addSubview(timePostLabel)
         
         NSLayoutConstraint.activate([
-            avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            avatarImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
+            avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            avatarImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
+            avatarImageView.heightAnchor.constraint(equalToConstant: 40),
+            avatarImageView.widthAnchor.constraint(equalToConstant: 40),
             
-            mainStackView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            mainStackView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor),
-            mainStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            mainStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            mainStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            mainStackView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 20),
             
             timePostLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            timePostLabel.leadingAnchor.constraint(equalTo: trailingAnchor, constant: 50),
-        ])
+            timePostLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: -20),
+            timePostLabel.leadingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: 20),
+            ])
         
     }
     

@@ -9,10 +9,13 @@ import Foundation
 import UIKit
 
 struct UserData {
-    let iD: String
-    private var nickname: String
-    private var avatarImage: UIImage
-    private var lastTimeOnline: Int
+    let iD: Int
+    var nickname: String
+    var avatarImage: UIImage?
+    var lastTimeOnline: Int
     
     
 }
+
+
+//private

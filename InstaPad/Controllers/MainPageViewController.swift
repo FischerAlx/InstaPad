@@ -23,13 +23,16 @@ class MainPageViewController: UIViewController {
         return table
     }()
     
-    var dataSource: [String] = []
+    var dataSource: [UserData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
-        dataSource = ["Nutzer 1", "Nutzer 2", "Nutzer 3", "Nutzer 4", "Nutzer 5", "Nutzer 6", "Nutzer 7", "Nutzer 8", "Nutzer 9", "Nutzer 10", "Nutzer 11", "Nutzer 12", "Nutzer 13", "Nutzer 14", "Nutzer 15", "Nutzer 16", "Nutzer 17", "Nutzer 18", "Nutzer 19", "Nutzer 20", "Nutzer 21", "Nutzer 22", "Nutzer 23", "Nutzer 24", "Nutzer 25", "Nutzer 26", "Nutzer 27", "Nutzer 28", ]
-         
+        //dataSource = ["Nutzer 1", "Nutzer 2", "Nutzer 3", "Nutzer 4", "Nutzer 5", "Nutzer 6", "Nutzer 7", "Nutzer 8", "Nutzer 9", "Nutzer 10", "Nutzer 11", "Nutzer 12", "Nutzer 13", "Nutzer 14", "Nutzer 15", "Nutzer 16", "Nutzer 17", "Nutzer 18", "Nutzer 19", "Nutzer 20", "Nutzer 21", "Nutzer 22", "Nutzer 23", "Nutzer 24", "Nutzer 25", "Nutzer 26", "Nutzer 27", "Nutzer 28", ]
+        dataSource = Array(repeating: UserData(iD: 123, nickname: "regularUser123", avatarImage: UIImage(named: "avatar"), lastTimeOnline: 5), count: 30)
+        
+        //UIImage(named: "avatar"
+                
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
@@ -43,13 +46,16 @@ class MainPageViewController: UIViewController {
 }
 
 extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PostMainViewCell.reuseIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: PostMainViewCell.reuseIdentifier, for: indexPath) as! PostMainViewCell
 
+        let user = dataSource[indexPath.row]
+        cell.configureCell(with: user)
 //        let model = dataSource[indexPath.row]
 //        var listConfiguration = cell.defaultContentConfiguration()
 //        var backgroundConfiguration = cell.defaultBackgroundConfiguration()
