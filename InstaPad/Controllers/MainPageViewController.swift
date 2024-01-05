@@ -17,9 +17,9 @@ class MainPageViewController: UIViewController {
         table.dataSource = self
         table.delegate = self
         table.separatorStyle = .none
-        //tableRegister123(tableView, for PostMainViewCell)
         table.register(PostMainViewCell.self, forCellReuseIdentifier: PostMainViewCell.reuseIdentifier)
         //table.register(UITableViewCell.self, forCellReuseIdentifier: "MainLentaId")
+        //tableRegister123(tableView, for PostMainViewCell)
         return table
     }()
     
@@ -27,16 +27,16 @@ class MainPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
-        //dataSource = ["Nutzer 1", "Nutzer 2", "Nutzer 3", "Nutzer 4", "Nutzer 5", "Nutzer 6", "Nutzer 7", "Nutzer 8", "Nutzer 9", "Nutzer 10", "Nutzer 11", "Nutzer 12", "Nutzer 13", "Nutzer 14", "Nutzer 15", "Nutzer 16", "Nutzer 17", "Nutzer 18", "Nutzer 19", "Nutzer 20", "Nutzer 21", "Nutzer 22", "Nutzer 23", "Nutzer 24", "Nutzer 25", "Nutzer 26", "Nutzer 27", "Nutzer 28", ]
-        dataSource = Array(repeating: UserData(iD: 123, nickname: "regularUser123", avatarImage: UIImage(named: "avatar"), lastTimeOnline: 5), count: 30)
-        
-        //UIImage(named: "avatar"
+        view.backgroundColor = .white
+        for _ in 0 ..< 25 {
+            dataSource.append(UserData(iD: Int.random(in: 0 ... 99999999999999), nickname: "regularUser" + "­\(Int.random(in: 1..<100))", avatarImage: UIImage(named: "avatar"), lastTimeOnline: Int.random(in: 1 ... 60)))
+        }
+        //UIImage(named: "avatar")
                 
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -56,22 +56,13 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
 
         let user = dataSource[indexPath.row]
         cell.configureCell(with: user)
-//        let model = dataSource[indexPath.row]
-//        var listConfiguration = cell.defaultContentConfiguration()
-//        var backgroundConfiguration = cell.defaultBackgroundConfiguration()
-//        
-//        listConfiguration.text = model
-//        listConfiguration.secondaryText = "New message"
-//        listConfiguration.secondaryTextProperties.font = UIFont.systemFont(ofSize: 21)
-//                
-//        backgroundConfiguration.backgroundColor = .darkGray
-//        backgroundConfiguration.cornerRadius = 10
-//        backgroundConfiguration.backgroundInsets = .init(top: 5, leading: 5, bottom: 5, trailing: 5)
-//        
-//        cell.contentConfiguration = listConfiguration
-//        cell.backgroundConfiguration = backgroundConfiguration
+
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
     }
     
     

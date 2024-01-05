@@ -58,8 +58,8 @@ class PostMainViewCell: UITableViewCell {
         underLabel.text = "id:" + String(user.iD)
         underLabel.textColor = UIColor(named: "secondaryColor")
         underLabel.font = UIFont.italicSystemFont(ofSize: 21)
-        timePostLabel.text = "° " + String(user.lastTimeOnline) + " min."
-        timePostLabel.font = UIFont.boldSystemFont(ofSize: 21)
+        timePostLabel.text = "last seen ° " + String(user.lastTimeOnline) + " min. ago"
+        timePostLabel.font = UIFont.boldSystemFont(ofSize: 12)
         
     }
     
@@ -87,7 +87,7 @@ class PostMainViewCell: UITableViewCell {
             mainStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
             mainStackView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 20),
             
-            timePostLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            timePostLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -10),
             timePostLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: -20),
             timePostLabel.leadingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: 20),
             ])
