@@ -29,21 +29,49 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         for _ in 0 ..< 25 {
-            dataSource.append(UserData(iD: Int.random(in: 0 ... 99999999999999), nickname: "regularUser" + "­\(Int.random(in: 1..<100))", avatarImage: UIImage(named: "avatar"), lastTimeOnline: Int.random(in: 1 ... 60)))
+            dataSource.append(UserData(iD: Int.random(in: 999999999999+1 ..< 9999999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1..<100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ... 60)))
         }
         //UIImage(named: "avatar")
-                
+            
         view.addSubview(tableView)
         
+        setuoLayot()
+        setupNavigationBar()
+        
+        }
+    
+    
+    func setuoLayot() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
+    }
+    
+    
+    
+    
+    func setupNavigationBar() {
+        let editAction = UIAction(handler: { _ in
+            self.tableView.isEditing.toggle()
+        })
+        navigationItem.title = "Schapka"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .edit, primaryAction: editAction, menu: nil)
         
-        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     
