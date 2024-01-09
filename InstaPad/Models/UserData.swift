@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct UserData {
+struct UserData: Hashable {
     let iD: Int
     var nickname: String
     var avatarImage: UIImage?

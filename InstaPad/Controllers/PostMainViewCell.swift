@@ -54,7 +54,7 @@ class PostMainViewCell: UITableViewCell {
         
         avatarImageView.image = user.avatarImage
         nicknameLabel.text = user.nickname
-        nicknameLabel.font = UIFont.boldSystemFont(ofSize: 30)
+        nicknameLabel.font = UIFont.boldSystemFont(ofSize: 25)
         underLabel.text = "id:" + String(user.iD)
         underLabel.textColor = UIColor(named: "secondaryColor")
         underLabel.font = UIFont.italicSystemFont(ofSize: 21)
