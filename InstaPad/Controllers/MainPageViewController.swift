@@ -29,8 +29,8 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        for _ in 0 ..< 25 {
-            users.append(UserData(iD: Int.random(in: 999999999999+1 ..< 9999999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1..<100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ... 60)))
+        for _ in 0 ..< 5 {
+            users.append(UserData(iD: Int.random(in: 999999999999+1 ..< 9999999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1 ..< 100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ..< 60)))
         }
         //UIImage(named: "avatar")
             
@@ -42,18 +42,21 @@ class MainPageViewController: UIViewController {
         }
     
     func setupDataSource() {
-        
         dataSource = UITableViewDiffableDataSource(tableView: tableView, cellProvider: { tableView, indexPath, user in
             let cell = tableView.dequeueReusableCell(withIdentifier: PostMainViewCell.reuseIdentifier, for: indexPath) as! PostMainViewCell
             cell.configureCell(with: user)
             return cell
         })
+        
+        updateDataSource(with: users)
+    }
+    
+    func updateDataSource(with users: [UserData]) {
         var snapshot = NSDiffableDataSourceSnapshot<Int, UserData>()
         snapshot.appendSections([0])
         snapshot.appendItems(users)
         dataSource?.apply(snapshot)
     }
-    
     
     
     
@@ -72,9 +75,19 @@ class MainPageViewController: UIViewController {
     func setupNavigationBar() {
         let editAction = UIAction(handler: { _ in
             self.tableView.isEditing.toggle()
+            if !self.tableView.isEditing {
+                self.tableView.reloadData()
+            }
         })
+        
+        let addAction = UIAction(handler: { _ in
+            self.users.append(UserData(iD: Int.random(in: 999999999999+1 ..< 9999999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1 ..< 100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ..< 60)))
+            self.updateDataSource(with: self.users)
+        })
+        
         navigationItem.title = "Schapka"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .edit, primaryAction: editAction, menu: nil)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(systemItem: .edit, primaryAction: editAction, menu: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(systemItem: .add, primaryAction: addAction, menu: nil)
         
     }
 }
