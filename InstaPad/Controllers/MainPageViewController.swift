@@ -104,6 +104,12 @@ class MainPageViewController: UIViewController {
 
 extension MainPageViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let user = dataSource?.itemIdentifier(for: indexPath) {
+            navigationController?.pushViewController(UserPageViewController(with: user), animated: true)
+        }
+    }
     
     /*func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
