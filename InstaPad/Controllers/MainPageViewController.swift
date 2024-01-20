@@ -30,7 +30,7 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         for _ in 0 ..< 5 {
-            users.append(UserData(iD: Int.random(in: 999999999999+1 ..< 9999999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1 ..< 100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ..< 60)))
+            users.append(UserData(iD: Int.random(in: 99999999+1 ..< 999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1 ..< 100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ..< 60)))
         }
         //UIImage(named: "avatar")
             
@@ -45,6 +45,7 @@ class MainPageViewController: UIViewController {
         dataSource = UITableViewDiffableDataSource(tableView: tableView, cellProvider: { tableView, indexPath, user in
             let cell = tableView.dequeueReusableCell(withIdentifier: PostMainViewCell.reuseIdentifier, for: indexPath) as! PostMainViewCell
             cell.configureCell(with: user)
+            cell.delegate = self
             return cell
         })
         
@@ -81,7 +82,7 @@ class MainPageViewController: UIViewController {
         })
         
         let addAction = UIAction(handler: { _ in
-            self.users.append(UserData(iD: Int.random(in: 999999999999+1 ..< 9999999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1 ..< 100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ..< 60)))
+            self.users.append(UserData(iD: Int.random(in: 99999999+1 ..< 999999999+1), nickname: "regularUser" + "­\(Int.random(in: 1 ..< 100))", avatarImage: UIImage(systemName: "person.crop.circle"), lastTimeOnline: Int.random(in: 1 ..< 60)))
             self.updateDataSource(with: self.users)
         })
         
@@ -100,7 +101,16 @@ class MainPageViewController: UIViewController {
 
 
 
-
+extension MainPageViewController: UserCellDelegate {
+    func didPressDetailDisclosure() {
+        let alert = UIAlertController(title: "Wow", message: "Hello World!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
+}
 
 extension MainPageViewController: UITableViewDelegate {
     
@@ -108,6 +118,7 @@ extension MainPageViewController: UITableViewDelegate {
         
         if let user = dataSource?.itemIdentifier(for: indexPath) {
             navigationController?.pushViewController(UserPageViewController(with: user), animated: true)
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
     

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol UserCellDelegate {
+    func didPressDetailDisclosure()
+}
+
 class PostMainViewCell: UITableViewCell {
 
     private lazy var avatarImageView: UIImageView = {
@@ -35,6 +39,17 @@ class PostMainViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    private lazy var goToProfilButton: UIButton = {
+        let action = UIAction { _ in
+            self.delegate?.didPressDetailDisclosure()
+        }
+        let button = UIButton(type: .detailDisclosure, primaryAction: action)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    var delegate: UserCellDelegate?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -75,6 +90,7 @@ class PostMainViewCell: UITableViewCell {
         contentView.addSubview(avatarImageView)
         contentView.addSubview(mainStackView)
         contentView.addSubview(timePostLabel)
+        contentView.addSubview(goToProfilButton)
         
         NSLayoutConstraint.activate([
             avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
@@ -90,6 +106,9 @@ class PostMainViewCell: UITableViewCell {
             timePostLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor, constant: -10),
             timePostLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor, constant: -20),
             timePostLabel.leadingAnchor.constraint(equalTo: mainStackView.trailingAnchor, constant: 20),
+            
+            goToProfilButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            goToProfilButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             ])
         
     }
